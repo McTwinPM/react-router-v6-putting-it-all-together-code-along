@@ -35,7 +35,8 @@ const BookstoreContainer = () => {
         {/* update a tag to Link component */}
         <Link to="new">Add a new Bookstore</Link>
         {/* add Outlet component */} 
-        <Outlet />
+        {/* add context for bookstore, addBookstore, and updateBookstore */}
+        <Outlet context={{bookstores, addBookstore, updateBookstore}}/>
       </main>
     </>
   )

@@ -1,9 +1,10 @@
-// import Link
-import { Link } from "react-router-dom";
-
+// import Link // import useOutletContext
+import { Link, useOutletContext } from "react-router-dom";
 
 const BookstoreList = () => {
-    const bookstores = []
+    {/* use useOutletContext and destructure bookstores value */}
+    const { bookstores } = useOutletContext()
+
 
     // update a tag to Link component
     const displayBookstores = bookstores.map(store => (
