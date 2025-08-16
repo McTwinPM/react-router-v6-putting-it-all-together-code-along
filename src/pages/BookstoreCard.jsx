@@ -1,3 +1,6 @@
+import { Outlet } from "react-router-dom"
+
+
 function BookstoreCard() {
     const bookstores = null
     const id = null
@@ -19,6 +22,8 @@ function BookstoreCard() {
           ))}
         </ul>
         <a>Add New Book</a>
+        {/* add Outlet component */}
+        <Outlet />
       </div>
     )
 }
