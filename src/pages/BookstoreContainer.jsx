@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import NavBar from "../components/NavBar"
-// import Outlet
-import { Outlet } from "react-router-dom"
+// import Outlet // import Link
+import { Outlet, Link } from "react-router-dom"
 
 
 const BookstoreContainer = () => {
@@ -32,7 +32,8 @@ const BookstoreContainer = () => {
       <NavBar />
       <main>
         <h1>🏬 Bookstores Directory</h1>
-        <a>Add a new Bookstore</a>
+        {/* update a tag to Link component */}
+        <Link to="new">Add a new Bookstore</Link>
         {/* add Outlet component */} 
         <Outlet />
       </main>
